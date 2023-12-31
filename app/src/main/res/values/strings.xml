@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BottomBar&amp;DrawerNavVar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="mahady_hasan_miraz">Mahady Hasan Miraz</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+    <string name="unit_converter">Unit Converter</string>
+    <string name="age_converter">Age Converter</string>
+    <string name="theme">Theme</string>
+    <string name="font_style">Font Style</string>
+    <string name="logout">Logout</string>
+    <string name="nav_open">open</string>
+    <string name="nav_close">close</string>
+</resources>

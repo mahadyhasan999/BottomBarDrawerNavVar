@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bmiCalc"
+        android:title="BMI calculator"
+        android:icon="@drawable/bmi"/>
+
+    <item
+        android:id="@+id/unitConv"
+        android:title="Unit Converter"
+        android:icon="@drawable/convert"/>
+
+    <item
+        android:id="@+id/ageConv"
+        android:title="Age Converter"
+        android:icon="@drawable/age"/>
+</menu>
