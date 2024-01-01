@@ -18,12 +18,42 @@
     <item
         android:id="@+id/theme"
         android:title="@string/theme"
-        android:icon="@drawable/theme"/>
+        android:icon="@drawable/theme">
+        <menu>
+            <item
+                android:id="@+id/themeOne"
+                android:title="Theme-1"
+                android:icon="@drawable/theme"/>
+            <item
+                android:id="@+id/themeTwo"
+                android:title="Theme-2"
+                android:icon="@drawable/theme"/>
+            <item
+                android:id="@+id/themeThree"
+                android:title="Theme-3"
+                android:icon="@drawable/theme"/>
+        </menu>
+    </item>
 
     <item
         android:id="@+id/font"
         android:title="@string/font_style"
-        android:icon="@drawable/font_size"/>
+        android:icon="@drawable/font_size">
+        <menu>
+            <item
+                android:id="@+id/fontOne"
+                android:title="Font-1"
+                android:icon="@drawable/font_size"/>
+            <item
+                android:id="@+id/fontTwo"
+                android:title="Font-2"
+                android:icon="@drawable/font_size"/>
+            <item
+                android:id="@+id/fonThree"
+                android:title="Font-3"
+                android:icon="@drawable/font_size"/>
+        </menu>
+    </item>
 
     <item
         android:id="@+id/logout"

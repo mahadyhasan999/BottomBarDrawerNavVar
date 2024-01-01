@@ -7,28 +7,31 @@
     android:background="#8E24AA"
     tools:context=".BMIFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/bmi_calculator"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="36dp">
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/headerBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bmi_calculator"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/weightLayout"
-            android:layout_width="150dp"
+            android:layout_width="250dp"
             android:layout_height="150dp"
             android:layout_marginTop="20dp"
-            android:background="@color/white"
+            android:background="#771990"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@+id/headerBMI">
 
             <TextView
                 android:id="@+id/weightTxt"
@@ -58,15 +61,14 @@
                 app:layout_constraintStart_toStartOf="@+id/weightTxt"
                 app:layout_constraintTop_toBottomOf="@+id/weightTxt" />
 
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/hightLayout"
-            android:layout_width="150dp"
+            android:layout_width="250dp"
             android:layout_height="150dp"
             android:layout_marginTop="24dp"
-            android:background="@color/white"
+            android:background="#771990"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/weightLayout">
@@ -103,7 +105,7 @@
 
         <Button
             android:id="@+id/calBtn"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:backgroundTint="#35A5E6"
@@ -121,7 +123,7 @@
             android:layout_width="250dp"
             android:layout_height="150dp"
             android:layout_marginTop="24dp"
-            android:background="@color/white"
+            android:background="#771990"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/calBtn">
