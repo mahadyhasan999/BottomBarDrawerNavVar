@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,12 +9,123 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:id="@+id/headerAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/age_converter"
             android:textColor="@color/white"
             android:textSize="30sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ageLayout"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="60dp"
+            android:background="#589816"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/headerAge">
+            <TextView
+                android:id="@+id/ageTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Age(Years)"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/ageEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="0"
+                android:inputType="number"
+                android:minWidth="48dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="42sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/ageTxt"
+                app:layout_constraintStart_toStartOf="@+id/ageTxt"
+                app:layout_constraintTop_toBottomOf="@+id/ageTxt" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <Button
+            android:id="@+id/calBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#497D13"
+            android:elevation="20dp"
+            android:text="Calculate"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ageLayout" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/resultLayout"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            android:background="#589816"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calBtn">
+
+
+            <TextView
+                android:id="@+id/resultTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Age(Minutes)"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/countTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="0"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="44sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/resultTxt"
+                app:layout_constraintStart_toStartOf="@+id/resultTxt"
+                app:layout_constraintTop_toBottomOf="@+id/resultTxt" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 
 </FrameLayout>

@@ -10,4 +10,10 @@
     <string name="logout">Logout</string>
     <string name="nav_open">open</string>
     <string name="nav_close">close</string>
+    <string name="theme_1">Theme-1</string>
+    <string name="theme_2">Theme-2</string>
+    <string name="theme_3">Theme-3</string>
+    <string name="font_1">Font-1</string>
+    <string name="font_2">Font-2</string>
+    <string name="font_3">Font-3</string>
 </resources>

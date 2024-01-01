@@ -22,15 +22,15 @@
         <menu>
             <item
                 android:id="@+id/themeOne"
-                android:title="Theme-1"
+                android:title="@string/theme_1"
                 android:icon="@drawable/theme"/>
             <item
                 android:id="@+id/themeTwo"
-                android:title="Theme-2"
+                android:title="@string/theme_2"
                 android:icon="@drawable/theme"/>
             <item
                 android:id="@+id/themeThree"
-                android:title="Theme-3"
+                android:title="@string/theme_3"
                 android:icon="@drawable/theme"/>
         </menu>
     </item>
@@ -42,15 +42,15 @@
         <menu>
             <item
                 android:id="@+id/fontOne"
-                android:title="Font-1"
+                android:title="@string/font_1"
                 android:icon="@drawable/font_size"/>
             <item
                 android:id="@+id/fontTwo"
-                android:title="Font-2"
+                android:title="@string/font_2"
                 android:icon="@drawable/font_size"/>
             <item
                 android:id="@+id/fonThree"
-                android:title="Font-3"
+                android:title="@string/font_3"
                 android:icon="@drawable/font_size"/>
         </menu>
     </item>
