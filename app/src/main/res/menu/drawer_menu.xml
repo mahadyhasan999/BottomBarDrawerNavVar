@@ -4,17 +4,14 @@
         android:id="@+id/bmiCalc"
         android:title="@string/bmi_calculator"
         android:icon="@drawable/bmi"/>
-
     <item
         android:id="@+id/unitConv"
         android:title="@string/unit_converter"
         android:icon="@drawable/convert"/>
-
     <item
         android:id="@+id/ageConv"
         android:title="@string/age_converter"
         android:icon="@drawable/age"/>
-
     <item
         android:id="@+id/theme"
         android:title="@string/theme"
@@ -54,7 +51,6 @@
                 android:icon="@drawable/font_size"/>
         </menu>
     </item>
-
     <item
         android:id="@+id/logout"
         android:title="@string/logout"

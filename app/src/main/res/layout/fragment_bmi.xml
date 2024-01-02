@@ -12,6 +12,7 @@
         android:layout_height="match_parent">
 
         <TextView
+            android:layout_marginTop="10dp"
             android:id="@+id/headerBMI"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -111,6 +112,7 @@
             android:backgroundTint="#6E1784"
             android:elevation="20dp"
             android:text="Calculate"
+            android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold"
             app:cornerRadius="10dp"

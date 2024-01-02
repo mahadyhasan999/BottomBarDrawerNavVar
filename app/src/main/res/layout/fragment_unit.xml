@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,12 +9,148 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:id="@+id/headerUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="@string/unit_converter"
             android:textColor="@color/white"
             android:textSize="30sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/meterToKilo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/miter_to_kilo"
+            android:background="@drawable/roundedbg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headerUnit" />
+
+        <TextView
+            android:id="@+id/mToKiloT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Meter to Kilo"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/meterToKilo"
+            app:layout_constraintStart_toStartOf="@id/meterToKilo"
+            app:layout_constraintTop_toBottomOf="@id/meterToKilo" />
+
+        <ImageView
+            android:id="@+id/meterToFeet"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:background="@drawable/roundedbg"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/meter_to_feet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mToKiloT" />
+
+        <TextView
+            android:id="@+id/mToFeetT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Meter to Feet"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/meterToFeet"
+            app:layout_constraintStart_toStartOf="@id/meterToFeet"
+            app:layout_constraintTop_toBottomOf="@id/meterToFeet" />
+
+        <ImageView
+            android:id="@+id/celToKel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+
+            android:background="@drawable/roundedbg"
+            android:layout_marginEnd="60dp"
+            android:src="@drawable/cel_to_kel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headerUnit" />
+
+        <TextView
+            android:id="@+id/celToKelT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Celcius to Kelvin"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/celToKel"
+            app:layout_constraintStart_toStartOf="@id/celToKel"
+            app:layout_constraintTop_toBottomOf="@id/celToKel" />
+
+        <ImageView
+            android:id="@+id/poundsToKg"
+            android:layout_width="100dp"
+            android:padding="4dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/roundedbg"
+            android:layout_marginEnd="60dp"
+            android:src="@drawable/pounds_to_kg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/celToKelT" />
+
+        <TextView
+            android:id="@+id/pounToKiloT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Pounds to Kg"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/poundsToKg"
+            app:layout_constraintStart_toStartOf="@id/poundsToKg"
+            app:layout_constraintTop_toBottomOf="@id/poundsToKg" />
+
+        <ImageView
+            android:id="@+id/gramToKg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/g_to_kg"
+            android:background="@drawable/roundedbg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mToFeetT" />
+
+        <TextView
+            android:id="@+id/gramToKgT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Gram to Kg"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/gramToKg"
+            app:layout_constraintStart_toStartOf="@id/gramToKg"
+            app:layout_constraintTop_toBottomOf="@id/gramToKg" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
